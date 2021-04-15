@@ -1,0 +1,31 @@
+div.bloque_fondo{
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+}
+div.bloque_fondo_2{
+    width: 40%;
+    margin: 1% 1%;
+    float: right;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+div.bloque_fondo_3{
+    width: 40%;
+    margin: 5% 5%;
+    float: left;
+    margin-top: 5%;
+    margin-bottom: 4%;
+}
+div.bloque_centro{
+    margin: 50%;
+}
+ img.izquierda {
+    float: left;
+    margin-right: 5%;
+  }
+div.bloque_fondo_4{
+    margin-left: 5%;
+    margin-top: 4%;
+}
