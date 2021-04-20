@@ -63,8 +63,8 @@
                   Usuario Administrador
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="./vistas/subir.html">Subir Obra</a></li>
-                  <li><a class="dropdown-item" href="./vistas/Evaluar.html">Evaluar Obra</a></li>
+                  <li><a class="dropdown-item" href="../vistas/subir.html">Subir Obra</a></li>
+                  <li><a class="dropdown-item" href="../vistas/Evaluar.html">Evaluar Obra</a></li>
                   <li><a class="dropdown-item" href="../index.html">Cerrar Sesion</a></li>
                 </ul>
               </li>
@@ -80,70 +80,83 @@
           </div>
         </div>
       </nav>
-    <div>
-        <div class="bloque_fondo_3">
-          <h2>Subir Imagenes</h2>
-            <form>
-                  <div class="form-group row">
-                      <label for="example-date-input" class="col-2 col-form-label">Año</label>
-                      <label></label>
-                      <div class="col-3">
-                        <input class="form-control" type="year" value="" id="example-date-input">
-                      </div>
-                  </div>
-                  <div class="form-group">
-                      <label for="formGroupExampleInput">Tecnica</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Descripcion</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Historia</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div>
-            </form>
-
-        </div>
-            <div class="bloque_fondo_2">
-              <img src="../Imagenes/recursos/img_box.png" class="float-right" alt="" height="70%" width="70%">
-              <form>
+    <div class="container-fluid">
+      <div class="row bloque_fondo_4"> 
+          <div class="col-sm-12 col-md-12">    
+            <div>
+              <br>
+                <div class="col-sm-12"><h2>Subir Imagenes</h2></div>
                 <br>
-                  <div class="form-group">
-                    <label for="exampleFormControlFile1"></label>
-                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                  </div>
-              </form>
-              <br><br>
-                   <!-- First modal dialog -->
-                <div class="modal fade" id="modal" aria-hidden="true" aria-labelledby="..." tabindex="-1">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <h3><br>&nbsp&nbsp Una vez subido solo el Administrador &nbsp&nbsp&nbsppodra hacer cambios <br>  &nbsp&nbsp&nbspdesea subir?</h3> 
-                      <div class="modal-footer">
-                        <!-- Toogle to second dialog -->
-                        <button class="btn btn-primary" data-bs-target="#modal2" data-bs-toggle="modal" data-bs-dismiss="modal">Subir</button>
+                  <form>
+                        <div class="form-group row">
+                            <label for="example-date-input" class="col-2 col-form-label">Año</label>
+                            <label></label>
+                            <div class="col-3">
+                              <input class="form-control" type="year" value="" id="example-date-input">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Tecnica</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">Descripcion</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">Historia</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                  </form>
+              </div> 
+          
+            </div> 
+          </div>
+      </div>
+          <div class="col-sm-0 col-md-1"><br></div>
+          <div class="row bloque_fondo_4">
+              <div class="col-sm-12 col-md-12">
+                <div>
+                  <img src="../Imagenes/recursos/img_box.png" class="float-right" alt="" height="50%" width="50%">
+                  <form>
+                    <br>
+                      <div class="form-group">
+                        <label for="exampleFormControlFile1"></label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                      </div>
+                  </form>
+                  <br><br>
+                      <!-- First modal dialog -->
+                    <div class="modal fade" id="modal" aria-hidden="true" aria-labelledby="..." tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <h3><br>&nbsp&nbsp Una vez subido solo el Administrador &nbsp&nbsp&nbsppodra hacer cambios <br>  &nbsp&nbsp&nbspdesea subir?</h3> 
+                          <div class="modal-footer">
+                            <!-- Toogle to second dialog -->
+                            <button class="btn btn-primary" data-bs-target="#modal2" data-bs-toggle="modal" data-bs-dismiss="modal">Subir</button>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <!-- Second modal dialog -->
-                <div class="modal fade" id="modal2" aria-hidden="true" aria-labelledby="..." tabindex="-1">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <h3><br>&nbsp&nbsp&nbspEl elemento se ha subido &nbsp&nbsp&nbspcorrectamente</h3> 
-                      <div class="modal-footer">
-                        <!-- Toogle to first dialog, `data-bs-dismiss` attribute can be omitted - clicking on link will close dialog anyway -->
-                        <a class="btn btn-primary" href="./subir.html" data-bs-toggle="modal" role="button">Cerrar</a>
+                    <!-- Second modal dialog -->
+                    <div class="modal fade" id="modal2" aria-hidden="true" aria-labelledby="..." tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <h3><br>&nbsp&nbsp&nbspEl elemento se ha subido &nbsp&nbsp&nbspcorrectamente</h3> 
+                          <div class="modal-footer">
+                            <!-- Toogle to first dialog, `data-bs-dismiss` attribute can be omitted - clicking on link will close dialog anyway -->
+                            <a class="btn btn-primary" href="./subir.html" data-bs-toggle="modal" role="button">Cerrar</a>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                    <!-- Open first dialog -->
+                    <a class="btn btn-primary" data-bs-toggle="modal" href="#modal" role="button">Subir</a>
                 </div>
-                <!-- Open first dialog -->
-                <a class="btn btn-primary" data-bs-toggle="modal" href="#modal" role="button">Subir</a>
-
-           </div>
+              </div>  
+            </div>
+          </div>  
+      <br>
     </div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
