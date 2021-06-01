@@ -42,9 +42,9 @@
                             //console.log(data.data.id);
                             var urlImagen = url.concat(data.data.image_id, '/full/843,/0/default.jpg');
                             //console.log(urlImagen);
-                          })
+                          
                             var carta = `<div class="card my-3 mx-5" style="width: 18rem;">
-                                      <img src="${item.urlImagen}" class="card-img-top" alt="${item.title}">
+                                      <img src="${urlImagen}" class="card-img-top" alt="${item.title}">
                                       <div class="card-body">
                                         <h5 class="card-title">${item.title}</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                                       
@@ -52,6 +52,7 @@
                                     </div>`    
                             $("#ContenedorCartas").append(carta);
                           })
+                      })
                         
                         
 
