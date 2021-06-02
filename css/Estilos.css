@@ -52,4 +52,15 @@ div.bloque_fondo_4{
   font-size: 55px;
   color: rgb(8, 0, 0);
 }
+.futer{
+  color: white;
+  height: 15%;
+  background-color: black;
+}
+
+.img {
+  width: 150px;
+  height: 150px;
+  margin-top: 25px;
+}
 
