@@ -26,8 +26,10 @@
 
     var url = "https://www.artic.edu/iiif/2/";
 
-    //https://www.artic.edu/iiif/2/{id}/
+    var urlficha = 'https://www.artic.edu/artworks/'
 
+    //https://www.artic.edu/iiif/2/{id}/
+    //https://www.artic.edu/artworks/656/lion-one-of-a-pair-south-pedestal
     // /full/843,/0/default.jpg
 
     $(document).ready(function () {
@@ -43,19 +45,21 @@
           console.log(data.data);
           $.each(data.data, function (i, item) {
             var urlApiLink = item.api_link;
-            //console.log(urlApiLink);
+            console.log(urlApiLink);
 
             $.get(`${urlApiLink}`, function (data) {
               //console.log(data.data.id);
               var urlImagen = url.concat(data.data.image_id, '/full/843,/0/default.jpg');
               //console.log(urlImagen);
-
+              console.log('https://www.artic.edu/artworks/'+ item.id)
+              
 
               var carta = `<div class="card my-3 mx-2" style="width: 18rem;">
                                     <img src="${urlImagen}" class="card-img-top" alt="${item.title}">
                                     <div class="card-body">
                                     <h5 class="card-title">${item.title}</h5>
-                                    <p class="card-text">${item.thumbnail.alt_text}</p>                                       
+                                    <p class="card-text">${item.thumbnail.alt_text}</p>
+                                    <a href=${urlficha}${item.id}> ir a pagina</a>                              
                                     </div>
                                     </div>`
               $("#ContenedorCartas").append(carta);
@@ -71,14 +75,14 @@
 
   </script>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark " id="nadvar">
-  </nav>
+  
 </head>
 
 <body>
-
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark " id="nadvar">
+  </nav>
   <br>
-
+  
 
 
   <div class="main">
