@@ -3,7 +3,7 @@ $(document).ready(function() {
     $("#nadvar").html(`<div class="container-fluid">
   <img src="./Imagenes/recursos/logo.jpg" alt="imagen" height="60px" width="60px">
   &nbsp&nbsp
-  <a class="navbar-brand" href="index.html">Grupo Cero</a>
+  <a class="navbar-brand" href="../index.html">Grupo Cero</a>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
   <span class="navbar-toggler-icon"></span>
   </button>
