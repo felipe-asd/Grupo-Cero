@@ -57,8 +57,12 @@ $(document).ready(function() {
         
         <li class="nav-item">
           <a class="nav-link" href="../../vistas/Formulario.html">Contacto</a>
-  
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../vistas/Formulario.html">Galeria Chicago</a>
+        </li>
+
   </ul>
   <form class="d-flex">
     <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
