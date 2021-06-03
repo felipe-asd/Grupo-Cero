@@ -55,6 +55,7 @@ div.bloque_fondo_4{
 .futer{
   color: white;
   height: 15%;
+  min-height: 100%;
   background-color: black;
   text-align: center;
 }
