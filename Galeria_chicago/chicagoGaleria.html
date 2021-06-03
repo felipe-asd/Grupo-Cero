@@ -22,7 +22,7 @@
     //scrip busqueda por id
     //https://api.artic.edu/api/v1/artworks/artworks/{id}
     //https://api.artic.edu/api/v1/artworks/27992?fields=id,title,image_id
-
+    
 
     var url = "https://www.artic.edu/iiif/2/";
 
@@ -34,8 +34,9 @@
 
     $(document).ready(function () {
 
+      
       $("#btnBusca").click(function () {
-
+        $("#ContenedorCartas").empty();
         var quearyBusqueda = document.getElementById('quearyBusqueda').value
         //console.log(quearyBusqueda);
         //https://api.artic.edu/api/v1/artworks/search?q=cats&query[term][is_public_domain]=true
