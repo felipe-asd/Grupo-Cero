@@ -17,12 +17,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <link rel="stylesheet" href="../css/Estilos.css">
- 
+
   <script>
+
+
+
     //scrip busqueda por id
     //https://api.artic.edu/api/v1/artworks/artworks/{id}
     //https://api.artic.edu/api/v1/artworks/27992?fields=id,title,image_id
-    
+
 
     var url = "https://www.artic.edu/iiif/2/";
 
@@ -34,9 +37,12 @@
 
     $(document).ready(function () {
 
-      
+
       $("#btnBusca").click(function () {
         $("#ContenedorCartas").empty();
+
+
+
         var quearyBusqueda = document.getElementById('quearyBusqueda').value
         //console.log(quearyBusqueda);
         //https://api.artic.edu/api/v1/artworks/search?q=cats&query[term][is_public_domain]=true
@@ -52,8 +58,8 @@
               //console.log(data.data.id);
               var urlImagen = url.concat(data.data.image_id, '/full/843,/0/default.jpg');
               //console.log(urlImagen);
-              console.log('https://www.artic.edu/artworks/'+ item.id)
-              
+              console.log('https://www.artic.edu/artworks/' + item.id)
+
 
               var carta = `<div class="card my-3 mx-2" style="width: 18rem;">
                                     <img src="${urlImagen}" class="card-img-top" alt="${item.title}">
@@ -76,14 +82,14 @@
 
   </script>
 
-  
+
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark " id="nadvar">
   </nav>
   <br>
-  
+
 
 
   <div class="main">
@@ -99,15 +105,19 @@
       </div>
 
     </div>
+
+
+
   </div>
 
-  <div class="centrada">
-    <div class="col">
-      <div class="row" id="ContenedorCartas">
+
+
+  <div class="row" style="align-items: center; "">
+    <div class=" col" id="ContenedorCartas" "></div>
 
       </div>
-    </div>
-  </div>
+    
+  
 
  
 
@@ -115,13 +125,13 @@
 
   <!--footer de clima-->
   <footer>
-    <div class="futer">
-      <br>
-      <div id="futer">
-        cargando temperatura ...
-      </div>
-      <br>
+    <div class=" futer">
+    <br>
+    <div id="futer">
+      cargando temperatura ...
     </div>
+    <br>
+  </div>
   </footer>
 
   <script src="../js/nadvar2.js"></script>
