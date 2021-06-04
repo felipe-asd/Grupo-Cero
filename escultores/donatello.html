@@ -12,22 +12,6 @@
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-  <style>
-    html,
-    body {
-      padding: 0;
-      margin: 0;
-      height: 100%;
-    }
-
-    footer {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-    }
-  </style>
   <link rel="stylesheet" href="../css/Estilos.css">
 </head>
 
@@ -40,13 +24,15 @@
       <div class="col-12"><br></div>
     </div>
 
-    <div class="block">
+    <div class="container-fluid">
       <div class="row">
-        <div class="ficha">
-          <img class="img-left" src="./donatello_retrato.jpg" style="max-width: 474; max-height: 590;">
-          <div class="content-heading">
+          <div class="col-1"></div>
+          <div class="col-11">
             <h3>Donatello</h3>
           </div>
+        <div class="col-sm-1"></div> 
+        <div class="col-sm-4 "><img  src="./donatello_retrato.jpg" style="border-radius: 5%; height:100%; width:100%;"></div>
+        <div class="col-sm-6"> 
           <p>Donec id elit non mi porta
             gravida at eget metus. Etiam
             porta sem malesuada magna mo
@@ -89,21 +75,23 @@
             am porta sem malesuada magn
             a mollis euismod. Donec sed
             odio dui.</p>
-
-
-
+        </div> 
+        
+        <div class="col-sm-1"></div>
         </div>
 
       </div>
       <div class="row">
-        <div class="col-9 col-lg-6"><a href="../galerias/galeria_generica_Donatello.html">Ir a Galeria del autor</a>
-        </div>
-        <div class="col-3 col-lg-1"><a href="../vistas/Formulario.html"> Contacto</a></div>
-
+        <div class="col-12"><br></div>
+        <div class="col-md-1 col-0"></div>
+        <div class="col-md-4 col-5"><a type='button' class="btn btn-primary" role="button" href="../galerias/galeria_generica_Donatello.html">Ir a Galeria del autor</a></div>
+        <div class="col-md-2 col-2"></div>
+        <div class="col-md-4 col-5"><a type='button' class="btn btn-primary" role="button" href="../vistas/Formulario.html"> Contacto</a></div>
+        <div class="col-md-1 col-0"></div>
       </div>
 
     </div>
-
+    <br>
   </div>
   <footer>
     <div class="futer">

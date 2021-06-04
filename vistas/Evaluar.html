@@ -10,32 +10,15 @@
     integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/Estilos.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="../css/Estilos.css">
-
-  <style>
-    html,
-    body {
-      padding: 0;
-      margin: 0;
-      height: 100%;
-    }
-
-    footer {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-    }
-  </style>
-
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nadvar">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nadvar_si">
   </nav>
-  <div class="bloque_fondo_4">
+  <div>
+    <br>
     <h2>Evaluar Obras</h2>
-    <br><br>
+    <br>
   </div>
   <div class="container-fluid">
     <div class="row">
@@ -50,8 +33,8 @@
           </aside>
         </div>
         <br><br>
-        <button type="button" class="btn btn-danger">Rechazar</button>&nbsp&nbsp
-        <button type="button" class="btn btn-primary">Aceptar</button>
+        <button type="button" onclick="rechazar()" class="btn btn-danger">Rechazar</button>&nbsp&nbsp
+        <button type="button" onclick="Evaluar()" class="btn btn-primary" role="button">Aceptar</button>
         <br><br><br>
       </div>
       <div class="col-sm-12 col-md-6">
@@ -65,11 +48,11 @@
           </aside>
         </div>
         <br><br>
-        <button type="button" class="btn btn-danger">Rechazar</button>&nbsp&nbsp
-        <button type="button" class="btn btn-primary">Aceptar</button>
+        <button type="button" onclick="rechazar()" class="btn btn-danger">Rechazar</button>&nbsp&nbsp
+        <button type="button" onclick="Evaluar()" class="btn btn-primary" role="button">Aceptar</button>
         <br><br><br>
       </div>
-      <div class="col-12"><br><br></div>
+      <div class="col-md-12"><br></div>
       <div class="col-sm-12 col-md-6">
         <div>
           <img class="izquierda" src="../Imagenes/recursos/img_box.png" height="45%" width="45%">
@@ -80,10 +63,10 @@
             autor: ********* <br>
           </aside>
         </div>
-        <br><br><br>
-        <button type="button" class="btn btn-danger">Rechazar</button>&nbsp&nbsp
-        <button type="button" class="btn btn-primary">Aceptar</button>
         <br><br>
+        <button type="button" onclick="rechazar()" class="btn btn-danger">Rechazar</button>&nbsp&nbsp
+        <button type="button" onclick="Evaluar()" class="btn btn-primary" role="button">Aceptar</button>
+        <br><br><br>
       </div>
       <div class="col-sm-12 col-md-6">
         <div>
@@ -95,14 +78,15 @@
             autor: ********* <br>
           </aside>
         </div>
-        <br><br><br>
-        <button type="button" class="btn btn-danger">Rechazar</button>&nbsp&nbsp
-        <button type="button" class="btn btn-primary">Aceptar</button>
         <br><br>
+        <button type="button" onclick="rechazar()" class="btn btn-danger">Rechazar</button>&nbsp&nbsp
+        <button type="button" onclick="Evaluar()" class="btn btn-primary" role="button">Aceptar</button>
+        <br><br><br>
       </div>
+      <div class="col-md-12"><br></div>
     </div>
   </div>
-  <footer style="position: relative;">
+  <footer>
     <div class="futer">
       <br>
       <div id="futer">
@@ -111,12 +95,12 @@
       <br>
     </div>
   </footer>
+  
 
-  <script src="../js/nadvar2.js"></script>
+  <script src="../js/Evaluar.js"></script>
+  <script src="../js/nadvar_S_I.js"></script>
   <script src="../js/geolocalizacion.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

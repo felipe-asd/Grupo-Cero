@@ -28,8 +28,9 @@ img.izquierda {
 div.bloque_fondo_4 {
   margin-top: 5%;
   margin-bottom: 5%;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  color:white;
 }
 
 .carousel-control-prev-icon,
@@ -58,26 +59,13 @@ div.bloque_fondo_4 {
   background-color: black;
   text-align: center;
 }
-
-.imga {
-  width: 150px;
-  height: 150px;
-  margin-top: 25px;
-}
-
-
-.ficha img {
-  margin-right: -10px;
-}
-
-.ficha .img-left {
-  float: right;
-}
-
-.ficha .img-right {
-  float: left;
-}
-
-.ficha .link_izq {
-  padding-left: 590px;
+#myBtn {
+  width: 300px;
+  padding: 10px;
+  font-size:20px;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  bottom: 50px;
+  z-index: 9999;
 }
