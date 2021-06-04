@@ -1,8 +1,9 @@
-$(document).ready(function(){
-    function showPosition(position){
-      var lat = position.coords.latitude;
-      var lon = position.coords.longitude;
+$(document).ready(function () {
+  function showPosition(position) {
+    var lat = position.coords.latitude;
+    var lon = position.coords.longitude;
 
+<<<<<<< HEAD
      console.log(lat)
      console.log(lon)
     
