@@ -3,7 +3,7 @@ $(document).ready(function () {
     var lat = position.coords.latitude;
     var lon = position.coords.longitude;
 
-<<<<<<< HEAD
+
      console.log(lat)
      console.log(lon)
     
