@@ -2,22 +2,18 @@ $(document).ready(function () {
   function showPosition(position) {
     var lat = position.coords.latitude;
     var lon = position.coords.longitude;
+    var apikey='4b03add00b2574f0e040ad2ddb067742';
 
 
      console.log(lat)
      console.log(lon)
     
      $.get(
-      `https://www.metaweather.com/api/location/search/?lattlong=${lat},${lon}`,
+      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apikey}&units=metric`,
       function (data) {
-        $.get(
-          `https://www.metaweather.com/api/location/${data[0].woeid}`,
-          function (weather) {
-            $('#futer').html(`TEMPERATURA: <img  src='https://www.metaweather.com/static/img/weather/${weather.consolidated_weather[0].weather_state_abbr}.svg' height='25px'>
-            ${weather.consolidated_weather[0].the_temp}°C`);
-          }
-        );
-      }
+       console.log(data)
+      $("#futer").html(`TEMPERATURA: <img  src='http://openweathermap.org/img/wn/${data.weather[0].icon}.png' height='25px'>
+      ${data.main.temp}`)}
     );
 
     }
